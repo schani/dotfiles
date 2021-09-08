@@ -1,0 +1,2 @@
+#add homebrew to the path
+export PATH=~/.linuxbrew/bin:~/.linuxbrew/sbin:$PATH

@@ -1,6 +1,3 @@
-echo '#add homebrew to the path' >>~/.bashrc
-echo 'export PATH=~/.linuxbrew/bin:~/.linuxbrew/sbin:$PATH' >>~/.bashrc
-
 function gco() {
     local BRANCH
 
