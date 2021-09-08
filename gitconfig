@@ -1,0 +1,25 @@
+[user]
+	name = Mark Probst
+	email = mark.probst@gmail.com
+
+[core]
+	editor = zile
+	pager = tig
+	excludesfile = /Users/schani/.gitignore_global
+
+[color]
+	pager = false
+	ui = auto
+	branch = auto
+	diff = false
+	interactive = auto
+	status = auto
+
+[push]
+	default = current
+
+[rerere]
+	enabled = true
+
+[alias]
+	branches = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
