@@ -2,10 +2,10 @@
 
 echo "Setting up dotfiles"
 
-cat profile.brew profile >>~/.profile
+cat bashrc.brew bashrc >>~/.bashrc
 cp gitconfig ~/.gitconfig
 
-. profile.brew
+. bashrc.brew
 
 sudo apt-get -y install zile tig fzf
 brew install lazygit gh
