@@ -9,4 +9,3 @@ cp gitconfig ~/.gitconfig
 
 sudo apt-get -y install zile tig fzf
 brew install lazygit gh
-
