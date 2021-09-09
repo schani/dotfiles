@@ -6,3 +6,7 @@ function gco() {
         git checkout "$BRANCH"
     fi
 }
+
+function gpr() {
+    git pull --rebase
+}
