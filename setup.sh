@@ -7,7 +7,7 @@ cp gitconfig ~/.gitconfig
 
 . bashrc.brew
 
-sudo apt-get -y install zile tig fzf
+sudo apt-get -y install zile tig fzf ripgrep
 brew install lazygit gh
 
 gh config editor zile
