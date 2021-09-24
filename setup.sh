@@ -2,12 +2,13 @@
 
 echo "Setting up dotfiles"
 
-cat bashrc.brew bashrc >>~/.bashrc
+cat bashrc >>~/.bashrc
 cp gitconfig ~/.gitconfig
 
-. bashrc.brew
+sudo apt-get -y install zile tig fzf
 
-sudo apt-get -y install zile tig fzf ripgrep
-brew install lazygit gh
+gh config set editor zile
 
-gh config editor zile
+cd /tmp
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
